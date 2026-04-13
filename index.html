@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creamos portfolios web profesionales para oficios, técnicos y profesionales. Mostrá tus trabajos y conseguí más clientes.">
+    <title>Portfolio Pro | Tu Web Profesional en 48hs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Inter'] antialiased text-slate-800 bg-white">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md border-b border-slate-200 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="layout" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="font-bold text-xl text-slate-900">Portfolio<span class="text-blue-600">Pro</span></span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#beneficios" class="text-slate-600 hover:text-blue-600 transition-colors font-medium">Beneficios</a>
+                    <a href="#ejemplos" class="text-slate-600 hover:text-blue-600 transition-colors font-medium">Ejemplos</a>
+                    <a href="#oferta" class="text-slate-600 hover:text-blue-600 transition-colors font-medium">Oferta</a>
+                    <a href="#faq" class="text-slate-600 hover:text-blue-600 transition-colors font-medium">FAQ</a>
+                    <a href="https://wa.me/5491112345678?text=Hola%21%20Quiero%20mi%20portfolio%20web" target="_blank" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition-all hover:scale-105 shadow-lg shadow-blue-600/30">
+                        Quiero mi portfolio
+                    </a>
+                </div>
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6 text-slate-700"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white border-t border-slate-200" id="mobile-menu">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#beneficios" class="block py-2 text-slate-600 hover:text-blue-600">Beneficios</a>
+                <a href="#ejemplos" class="block py-2 text-slate-600 hover:text-blue-600">Ejemplos</a>
+                <a href="#oferta" class="block py-2 text-slate-600 hover:text-blue-600">Oferta</a>
+                <a href="https://wa.me/5491112345678?text=Hola%21%20Quiero%20mi%20portfolio%20web" class="block py-2 text-blue-600 font-semibold">Quiero mi portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-slate-50 -z-10"></div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-blue-100/50 to-transparent rounded-bl-[100px] -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 animate-fade-in-up">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                        <span>¡Apto para cualquier rubro!</span>
+                    </div>
+                    
+                    <h1 class="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                        Mostrá lo que sabés hacer y <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">conseguí más oportunidades</span>
+                    </h1>
+                    
+                    <p class="text-lg lg:text-xl text-slate-600 max-w-xl leading-relaxed">
+                        Creamos tu página web profesional para que muestres tus trabajos, habilidades y experiencia. Ideal para <strong>oficios, técnicos, profesionales</strong> y quienes buscan su primer empleo.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5491112345678?text=Hola%21%20Quiero%20mi%20portfolio%20web" target="_blank" class="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all hover:scale-105 shadow-xl shadow-blue-600/30 animate-pulse-glow">
+                            <i data-lucide="whatsapp" class="w-5 h-5"></i>
+                            Quiero mi portfolio
+                        </a>
+                        <a href="#ejemplos" class="inline-flex items-center justify-center gap-2 bg-white text-slate-700 border-2 border-slate-200 px-8 py-4 rounded-xl font-bold text-lg hover:border-blue-600 hover:text-blue-600 transition-all">
+                            <span>Ver ejemplos</span>
+                            <i data-lucide="arrow-down" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center gap-4 pt-4">
+                        <div class="flex -space-x-3">
+                            <img src="https://static.photos/people/200x200/1" alt="Usuario" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                            <img src="https://static.photos/people/200x200/2" alt="Usuario" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                            <img src="https://static.photos/people/200x200/3" alt="Usuario" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                        </div>
+                        <div class="text-sm text-slate-600">
+                            <span class="font-bold text-slate-900">+500</span> profesionales ya tienen su web
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative animate-fade-in-up delay-200">
+                    <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
+                        <div class="bg-slate-100 px-4 py-3 border-b border-slate-200 flex items-center gap-2">
+                            <div class="flex gap-1.5">
+                                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                            </div>
+                            <div class="flex-1 text-center text-xs text-slate-500 font-mono">tuporfolio.com/juan-carpintero</div>
+                        </div>
+                        <div class="aspect-[4/3] bg-gradient-to-br from-slate-50 to-slate-100 p-6 flex flex-col items-center justify-center text-center gap-4">
+                            <div class="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                                <i data-lucide="user" class="w-12 h-12 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Juan Pérez</h3>
+                                <p class="text-blue-600 font-medium">Carpintero Profesional</p>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2 w-full max-w-xs mt-4">
+                                <div class="aspect-square bg-slate-200 rounded-lg overflow-hidden">
+                                    <img src="https://static.photos/craft/200x200/1" alt="Trabajo" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                                </div>
+                                <div class="aspect-square bg-slate-200 rounded-lg overflow-hidden">
+                                    <img src="https://static.photos/craft/200x200/2" alt="Trabajo" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                                </div>
+                                <div class="aspect-square bg-slate-200 rounded-lg overflow-hidden">
+                                    <img src="https://static.photos/craft/200x200/3" alt="Trabajo" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                                </div>
+                            </div>
+                            <div class="flex gap-2 mt-2">
+                                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">Contactar</button>
+                                <button class="border border-slate-300 text-slate-600 px-4 py-2 rounded-lg text-sm font-semibold">Ver más trabajos</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating elements -->
+                    <div class="absolute -top-4 -right-4 bg-white p-3 rounded-xl shadow-lg border border-slate-100 animate-float">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                <i data-lucide="trending-up" class="w-4 h-4 text-green-600"></i>
+                            </div>
+                            <span class="text-sm font-bold text-slate-700">+3 clientes esta semana</span>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-white p-3 rounded-xl shadow-lg border border-slate-100 animate-float delay-300">
+                        <div class="flex items-center gap-2">
+                            <div class="flex -space-x-2">
+                                <div class="w-6 h-6 rounded-full bg-blue-500 border-2 border-white"></div>
+                                <div class="w-6 h-6 rounded-full bg-cyan-500 border-2 border-white"></div>
+                            </div>
+                            <span class="text-sm font-bold text-slate-700">Disponible 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">¿Te resulta familiar?</h2>
+                <p class="text-slate-400 text-lg">El mercado laboral cambió, pero tu forma de presentarte no</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 scroll-reveal hover:border-blue-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-red-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="file-x" class="w-7 h-7 text-red-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tu CV no destaca</h3>
+                    <p class="text-slate-400 leading-relaxed">Entre cientos de hojas de vida, el tuyo se pierde en la pila. No mostrás realmente lo que sabés hacer.</p>
+                </div>
+                
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 scroll-reveal delay-100 hover:border-blue-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="search" class="w-7 h-7 text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">No te encuentran</h3>
+                    <p class="text-slate-400 leading-relaxed">Sin presencia online, los clientes y empleadores no pueden ver tu trabajo antes de contactarte.</p>
+                </div>
+                
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 scroll-reveal delay-200 hover:border-blue-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="thumbs-down" class="w-7 h-7 text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Falta de confianza</h3>
+                    <p class="text-slate-400 leading-relaxed">Sin mostrar trabajos reales, es difícil generar la confianza necesaria para cerrar una contratación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 scroll-reveal">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-3xl transform rotate-3 opacity-20"></div>
+                        <img src="https://static.photos/workspace/1024x768/42" alt="Persona trabajando en su portfolio" class="relative rounded-2xl shadow-2xl w-full object-cover">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl border border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-slate-900">Web activa</p>
+                                    <p class="text-sm text-slate-500">en 48 horas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2 scroll-reveal">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
+                        <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                        <span>La solución</span>
+                    </div>
+                    <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+                        Tu propia página web profesional
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Creamos páginas web personales donde podés mostrar tus trabajos, habilidades y experiencia, <strong>sin importar tu rubro</strong>. Desde carpintería hasta marketing, todos tienen algo valioso para mostrar.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-blue-600"></i>
+                            </div>
+                            <span class="text-slate-700">Diseño personalizado según tu profesión</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-blue-600"></i>
+                            </div>
+                            <span class="text-slate-700">Galería de trabajos y proyectos</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-blue-600"></i>
+                            </div>
+                            <span class="text-slate-700">Formulario de contacto integro</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-blue-600"></i>
+                            </div>
+                            <span class="text-slate-700">Optimizado para celulares</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">¿Por qué tener un portfolio web?</h2>
+                <p class="text-slate-600 text-lg max-w-2xl mx-auto">Ventajas reales que impactan directamente en tus oportunidades laborales</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-lg hover:border-blue-300 transition-all scroll-reveal group">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                        <i data-lucide="award" class="w-6 h-6 text-blue-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Destacás frente a otros</h3>
+                    <p class="text-slate-600 text-sm">Demostrás proactividad y profesionalismo que otros candidatos no muestran.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-lg hover:border-blue-300 transition-all scroll-reveal delay-100 group">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                        <i data-lucide="image" class="w-6 h-6 text-blue-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Mostrás trabajos reales</h3>
+                    <p class="text-slate-600 text-sm">Fotos de obras, proyectos, certificaciones. Que vean tu talento, no solo tu palabra.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-lg hover:border-blue-300 transition-all scroll-reveal delay-200 group">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-blue-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Generás confianza</h3>
+                    <p class="text-slate-600 text-sm">Una web profesional valida tu experiencia y genera credibilidad instantánea.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-lg hover:border-blue-300 transition-all scroll-reveal delay-300 group">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                        <i data-lucide="target" class="w-6 h-6 text-blue-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Más clientes y empleo</h3>
+                    <p class="text-slate-600 text-sm">Estás disponible 24/7. Las oportunidades te encuentran incluso dormido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="ejemplos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Diseños adaptados a tu rubro</h2>
+                <p class="text-slate-600 text-lg">Cada profesión tiene su estilo único</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Example 1: Trades -->
+                <div class="group scroll-reveal">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="aspect-[4/3] bg-slate-100 relative overflow-hidden">
+                            <img src="https://static.photos/craft/640x480/10" alt="Portfolio Carpintero" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="bg-blue-600 px-3 py-1 rounded-full text-xs font-bold">Oficios</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-900 mb-2">Carpintería & Ebanistería</h3>
+                            <p class="text-slate-600 text-sm mb-4">Galería fotográfica de muebles, restauraciones y trabajos a medida.</p>
+                            <div class="flex items-center gap-2 text-blue-600 text-sm font-semibold">
+                                <span>Ver ejemplo</span>
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example 2: Technical -->
+                <div class="group scroll-reveal delay-100">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="aspect-[4/3] bg-slate-100 relative overflow-hidden">
+                            <img src="https://static.photos/technology/640x480/20" alt="Portfolio Técnico" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="bg-cyan-600 px-3 py-1 rounded-full text-xs font-bold">Técnicos</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-900 mb-2">Electricista Matriculado</h3>
+                            <p class="text-slate-600 text-sm mb-4">Certificaciones, obras realizadas y servicios de emergencia.</p>
+                            <div class="flex items-center gap-2 text-blue-600 text-sm font-semibold">
+                                <span>Ver ejemplo</span>
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example 3: Professional -->
+                <div class="group scroll-reveal delay-200">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="aspect-[4/3] bg-slate-100 relative overflow-hidden">
+                            <img src="https://static.photos/office/640x480/30" alt="Portfolio Profesional" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="bg-purple-600 px-3 py-1 rounded-full text-xs font-bold">Profesionales</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-900 mb-2">Marketing & Administración</h3>
+                            <p class="text-slate-600 text-sm mb-4">CV interactivo, casos de éxito y habilidades profesionales.</p>
+                            <div class="flex items-center gap-2 text-blue-600 text-sm font-semibold">
+                                <span>Ver ejemplo</span>
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Comparison -->
+            <div class="bg-slate-900 rounded-3xl p-8 lg:p-12 scroll-reveal">
+                <h3 class="text-2xl font-bold text-white text-center mb-8">CV Tradicional vs Portfolio Web</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center">
+                                <i data-lucide="file-text" class="w-5 h-5 text-red-400"></i>
+                            </div>
+                            <h4 class="font-bold text-white">CV de Papel/PDF</h4>
+                        </div>
+                        <ul class="space-y-3 text-slate-400 text-sm">
+                            <li class="flex items-center gap-2"><i data-lucide="x" class="w-4 h-4 text-red-500"></i> Se pierde entre cientos iguales</li>
+                            <li class="flex items-center gap-2"><i data-lucide="x" class="w-4 h-4 text-red-500"></i> No muestra trabajos visuales</li>
+                            <li class="flex items-center gap-2"><i data-lucide="x" class="w-4 h-4 text-red-500"></i> Estático y olvidable</li>
+                            <li class="flex items-center gap-2"><i data-lucide="x" class="w-4 h-4 text-red-500"></i> Llega solo a quien lo entregás</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-600 rounded-xl p-6 shadow-lg shadow-blue-600/25">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                                <i data-lucide="globe" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-white">Portfolio Web</h4>
+                        </div>
+                        <ul class="space-y-3 text-blue-100 text-sm">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-white"></i> Destaca profesionalmente</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-white"></i> Galería fotográfica de obras</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-white"></i> Interactivo y memorable</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-white"></i> Disponible para todo el mundo 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Historias reales</h2>
+                <p class="text-slate-600 text-lg">Profesionales que multiplicaron sus oportunidades</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 scroll-reveal">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-slate-700 mb-6 italic">"Soy electricista y pensé que esto no era para mí. En 2 semanas de tener mi web, conseguí 3 clientes grandes que me encontraron por Google."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://static.photos/people/200x200/50" alt="Roberto" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-bold text-slate-900">Roberto S.</p>
+                            <p class="text-sm text-slate-500">Electricista matriculado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 scroll-reveal delay-100">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-slate-700 mb-6 italic">"Buscaba mi primer trabajo de administrativa. Mi portfolio web me diferenció de otros 50 candidatos. Contratada en 1 semana."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://static.photos/people/200x200/51" alt="María" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-bold text-slate-900">María G.</p>
+                            <p class="text-sm text-slate-500">Administrativa junior</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 scroll-reveal delay-200">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-slate-700 mb-6 italic">"Carpintero hace 20 años. Mi hijo me insistió con esto. Ahora el 40% de mis clientes viene de mi página web. Increíble."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://static.photos/people/200x200/52" alt="Carlos" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-bold text-slate-900">Carlos M.</p>
+                            <p class="text-sm text-slate-500">Carpintero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="oferta" class="py-20 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-50 to-transparent -z-10"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 scroll-reveal">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-red-100 text-red-700 rounded-full text-sm font-bold mb-4 animate-pulse">
+                    <i data-lucide="clock" class="w-4 h-4"></i>
+                    <span>Solo 10 cupos disponibles este mes</span>
+                </div>
+                <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 mb-4">Todo lo que incluye tu portfolio</h2>
+                <p class="text-slate-600 text-lg">Inversión única, tu web para siempre</p>
+            </div>
+            
+            <div class="bg-white rounded-3xl shadow-2xl border-2 border-blue-600 overflow-hidden scroll-reveal">
+                <div class="bg-blue-600 text-white p-8 text-center">
+                    <h3 class="text-2xl font-bold mb-2">Portfolio Web Pro</h3>
+                    <p class="text-blue-100">Diseño personalizado + Setup completo</p>
+                </div>
+                
+                <div class="p-8 lg:p-12">
+                    <div class="flex items-baseline justify-center gap-2 mb-8">
+                        <span class="text-5xl font-bold text-slate-900">$299</span>
+                        <span class="text-slate-500 line-through text-2xl">$450</span>
+                        <span class="text-green-600 font-semibold bg-green-100 px-3 py-1 rounded-full text-sm">¡33% OFF!</span>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-slate-900 flex items-center gap-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600"></i>
+                                Diseño profesional
+                            </h4>
+                            <ul class="space-y-3 text-slate-600 text-sm pl-7">
+                                <li>• Personalizado a tu rubro</li>
+                                <li>• Colores y tipografía profesional</li>
+                                <li>• Adaptado a celular y tablet</li>
+                                <li>• Carga rápida garantizada</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-slate-900 flex items-center gap-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-blue-600"></i>
+                                Funcionalidades esenciales
+                            </h4>
+                            <ul class="space-y-3 text-slate-600 text-sm pl-7">
+                                <li>• Sección "Sobre mí" y servicios</li>
+                                <li>• Galería de fotos de trabajos</li>
+                                <li>• Formulario de contacto directo</li>
+                                <li>• Links a WhatsApp y redes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-slate-200 pt-8 mb-8">
+                        <h4 class="font-bold text-slate-900 text-center mb-4 text-lg">🎁 Bonos especiales (valorados en $150)</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-blue-50 p-4 rounded-xl flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="message-circle" class="w-5 h-5 text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-slate-900 text-sm">Asesoramiento personalizado</p>
+                                    <p class="text-xs text-slate-600">Te ayudamos a organizar tu contenido</p>
+                                </div>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-xl flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="search" class="w-5 h-5 text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-slate-900 text-sm">Optimización de perfil</p>
+                                    <p class="text-xs text-slate-600">Textos persuasivos incluidos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/5491112345678?text=Hola%21%20Quiero%20aprovechar%20la%20promo%20de%20mi%20portfolio%20web" target="_blank" class="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all hover:scale-[1.02] shadow-lg shadow-blue-600/30">
+                        Quiero mi portfolio ahora
+                    </a>
+                    <p class="text-center text-slate-500 text-sm mt-4">Entrega en 48-72 horas hábiles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 scroll-reveal">
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Preguntas frecuentes</h2>
+                <p class="text-slate-600">Todo lo que necesitás saber</p>
+            </div>
+            
+            <div class="space-y-4" id="faq-container">
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden scroll-reveal">
+                    <button class="faq-btn w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors">
+                        <span class="font-semibold text-slate-900">¿Necesito tener experiencia o saber de tecnología?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-slate-600">
+                        <p>Para nada. Nos encargamos de todo el proceso técnico. Vos solo necesitás contarnos sobre tu trabajo y enviarnos fotos. Si no tenés fotos profesionales, te damos consejos para sacarlas con tu celular.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden scroll-reveal">
+                    <button class="faq-btn w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors">
+                        <span class="font-semibold text-slate-900">¿Qué puedo mostrar en mi portfolio?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-slate-600">
+                        <p>Lo que sea que haga a tu trabajo valioso: fotos de obras terminadas, certificados, maquinaria que manejás, trabajos antes y después, testimonios de clientes anteriores, proyectos personales, o incluso tu formación y habilidades si buscás tu primer empleo.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden scroll-reveal">
+                    <button class="faq-btn w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors">
+                        <span class="font-semibold text-slate-900">¿Cuánto tarda en estar listo?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-slate-600">
+                        <p>Una vez que nos enviás el contenido (fotos e información), tu web estará lista en 48 a 72 horas hábiles. Si necesitás que sea urgente, consultanos por opciones de entrega express.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden scroll-reveal">
+                    <button class="faq-btn w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors">
+                        <span class="font-semibold text-slate-900">¿Cómo se usa el portfolio una vez listo?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-slate-600">
+                        <p>Te damos un link personalizado (ej: tuporfolio.com/tu-nombre) que podés compartir por WhatsApp, redes sociales, incluir en tu currículum, o enviar a potenciales clientes/empleadores. También te enseñamos cómo actualizarlo vos mismo si querés agregar nuevos trabajos.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden scroll-reveal">
+                    <button class="faq-btn w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors">
+                        <span class="font-semibold text-slate-900">¿Hay pagos mensuales o es solo una vez?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-slate-600">
+                        <p>El precio de $299 es único. Incluye el dominio por 1 año y el hosting. Pasado el primer año, si querés mantenerlo activo, hay un costo de mantenimiento anual muy bajo (aproximadamente $30 USD al año), o te podemos enseñar a migrarlo a tu propio hosting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 bg-blue-600 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-700 to-blue-500 -z-0"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6">No dejes que tu trabajo pase desapercibido</h2>
+            <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Ya sea que seas carpintero, electricista, administrativo o estés buscando tu primer empleo: tu portfolio web te abre puertas.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/5491112345678?text=Hola%21%20Quiero%20mi%20portfolio%20web%20ahora" target="_blank" class="inline-flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all hover:scale-105 shadow-xl">
+                    <i data-lucide="whatsapp" class="w-6 h-6"></i>
+                    Quiero mi portfolio ahora
+                </a>
+                <span class="text-blue-200 text-sm">Respuesta en menos de 1 hora</span>
+            </div>
+            
+            <div class="mt-8 flex items-center justify-center gap-6 text-blue-200 text-sm">
+                <span class="flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i>
+                    Pago seguro
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="clock" class="w-4 h-4"></i>
+                    Entrega 48-72hs
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="heart" class="w-4 h-4"></i>
+                    +500 clientes satisfechos
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i data-lucide="layout" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="font-bold text-xl text-white">Portfolio<span class="text-blue-500">Pro</span></span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-sm">Creamos páginas web profesionales para que personas trabajadoras muestren su talento al mundo. Sin complicaciones técnicas, resultados reales.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Links útiles</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#beneficios" class="hover:text-blue-400 transition-colors">Beneficios</a></li>
+                        <li><a href="#ejemplos" class="hover:text-blue-400 transition-colors">Ejemplos</a></li>
+                        <li><a href="#faq" class="hover:text-blue-400 transition-colors">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="whatsapp" class="w-4 h-4"></i>
+                            <a href="https://wa.me/5491112345678" class="hover:text-blue-400 transition-colors">+54 9 11 1234-5678</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <a href="mailto:hola@portfoliopro.com" class="hover:text-blue-400 transition-colors">hola@portfoliopro.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm">© 2024 PortfolioPro. Todos los derechos reservados.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-8 h-8 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                        <i data-lucide="instagram" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                        <i data-lucide="facebook" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5491112345678?text=Hola%21%20Quiero%20mi%20portfolio%20web" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center gap-2 group" id="whatsapp-float">
+        <i data-lucide="whatsapp" class="w-6 h-6"></i>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:px-2 transition-all duration-300 whitespace-nowrap font-semibold">¡Escribime!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
