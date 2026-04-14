@@ -132,7 +132,7 @@
                     <div class="absolute -top-4 -right-4 bg-white p-3 rounded-xl shadow-lg border border-slate-100 animate-float">
                         <div class="flex items-center gap-2">
                             <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                                <i data-lucide="trending-up" class="w-4 h-4 text-green-600"></i>
+                                <i data-lucide="message-circle-more" class="w-4 h-4 text-green-600"></i>
                             </div>
                             <span class="text-sm font-bold text-slate-700">+3 clientes esta semana</span>
                         </div>
@@ -300,72 +300,288 @@
     <section id="ejemplos" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 scroll-reveal">
-                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Diseños adaptados a tu rubro</h2>
-                <p class="text-slate-600 text-lg">Cada profesión tiene su estilo único</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Ejemplos pensados por cliente</h2>
+                <p class="text-slate-600 text-lg">Cada card muestra una propuesta individual, clara y lista para vender mejor tu trabajo</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- Example 1: Trades -->
+            <div class="space-y-6 mb-12">
+                <!-- Example 1 -->
                 <div class="group scroll-reveal">
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="aspect-[4/3] bg-slate-100 relative overflow-hidden">
-                            <img src="https://static.photos/craft/640x480/10" alt="Portfolio Carpintero" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                                <span class="bg-blue-600 px-3 py-1 rounded-full text-xs font-bold">Oficios</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-lg text-slate-900 mb-2">Carpintería & Ebanistería</h3>
-                            <p class="text-slate-600 text-sm mb-4">Galería fotográfica de muebles, restauraciones y trabajos a medida.</p>
-                            <div class="flex items-center gap-2 text-blue-600 text-sm font-semibold">
-                                <span>Ver ejemplo</span>
-                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300">
+                        <div class="grid lg:grid-cols-[360px_1fr]">
+                            <a href="https://verdant-kitten-6f52f8.netlify.app/" target="_blank" class="relative min-h-[300px] bg-slate-100 overflow-hidden block">
+                                <img src="./assets/jessica.png" alt="Portfolio de Laura Benítez" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"></div>
+                                <div class="absolute top-5 right-5 inline-flex items-center gap-2 bg-white text-slate-900 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                                    
+                                </div>
+                                <div class="absolute left-6 bottom-6 right-6">
+                                    <span class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold border border-white/20">Cliente destacado</span>
+                                    <h3 class="mt-4 text-2xl font-bold text-white">Jessica </h3>
+                                    <p class="text-sm text-blue-100">Diseño Gráfico</p>
+                                </div>
+                            </a>
+                            <div class="p-8 lg:p-10">
+                                <div class="flex flex-wrap items-center gap-3 mb-5">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">Diseño y tecnología</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-6">Pensado para aquellos donde es importante que el resultado se pueda ver (no solo explicar). Ahí el portfolio pasa a ser clave.</p>
+                                <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Especialidad</p>
+                                        <p class="font-semibold text-slate-900">Diseño UX/UI - Diseño Gráfico - Diseño Web - Ilustradores - Creativos de Contenido</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Resultado</p>
+                                        <p class="font-semibold text-slate-900">El reclutador vé lo que hacés - Confía más rápido - Te elige antes</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Enfoque</p>
+                                        <p class="font-semibold text-slate-900">Galería + testimonios</p>
+                                    </div>
+                                </div>
+                                <a href="https://verdant-kitten-6f52f8.netlify.app/" target="_blank" class="inline-flex items-center gap-2 text-blue-600 text-sm font-semibold hover:text-blue-700">
+                                    <span>Ir al ejemplo completo</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Example 2: Technical -->
+
+                <!-- Example 2 -->
                 <div class="group scroll-reveal delay-100">
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="aspect-[4/3] bg-slate-100 relative overflow-hidden">
-                            <img src="https://static.photos/technology/640x480/20" alt="Portfolio Técnico" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                                <span class="bg-cyan-600 px-3 py-1 rounded-full text-xs font-bold">Técnicos</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-lg text-slate-900 mb-2">Electricista Matriculado</h3>
-                            <p class="text-slate-600 text-sm mb-4">Certificaciones, obras realizadas y servicios de emergencia.</p>
-                            <div class="flex items-center gap-2 text-blue-600 text-sm font-semibold">
-                                <span>Ver ejemplo</span>
-                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300">
+                        <div class="grid lg:grid-cols-[360px_1fr]">
+                            <a href="https://portfolio-pro.com/ejemplos/diego-roldan" target="_blank" class="relative min-h-[300px] bg-slate-100 overflow-hidden block">
+                                <img src="https://static.photos/technology/640x480/20" alt="Portfolio de Diego Roldán" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"></div>
+                                <div class="absolute top-5 right-5 inline-flex items-center gap-2 bg-white text-slate-900 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                                   
+                                </div>
+                                <div class="absolute left-6 bottom-6 right-6">
+                                    <span class="inline-flex items-center gap-2 bg-cyan-500/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold border border-white/20">Servicio técnico</span>
+                                    <h3 class="mt-4 text-2xl font-bold text-white">Diego Roldán</h3>
+                                    <p class="text-sm text-cyan-100">Electricista matriculado para hogares y comercios</p>
+                                </div>
+                            </a>
+                            <div class="p-8 lg:p-10">
+                                <div class="flex flex-wrap items-center gap-3 mb-5">
+                                    <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-bold">Oficios y Técnicos</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-6">Pensado para aquellos que deben transmitir confianza + trabajos reales.</p>
+                                <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Servicios</p>
+                                        <p class="font-semibold text-slate-900">Tableros, instalaciones y mantenimiento</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Prueba social</p>
+                                        <p class="font-semibold text-slate-900">Opiniones y zonas de cobertura</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Objetivo</p>
+                                        <p class="font-semibold text-slate-900">Generar llamadas directas</p>
+                                    </div>
+                                </div>
+                                <a href="https://portfolio-pro.com/ejemplos/diego-roldan" target="_blank" class="inline-flex items-center gap-2 text-blue-600 text-sm font-semibold hover:text-blue-700">
+                                    <span>Ir al ejemplo completo</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Example 3: Professional -->
+
+                <!-- Example 3 -->
                 <div class="group scroll-reveal delay-200">
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="aspect-[4/3] bg-slate-100 relative overflow-hidden">
-                            <img src="https://static.photos/office/640x480/30" alt="Portfolio Profesional" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                                <span class="bg-purple-600 px-3 py-1 rounded-full text-xs font-bold">Profesionales</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-lg text-slate-900 mb-2">Marketing & Administración</h3>
-                            <p class="text-slate-600 text-sm mb-4">CV interactivo, casos de éxito y habilidades profesionales.</p>
-                            <div class="flex items-center gap-2 text-blue-600 text-sm font-semibold">
-                                <span>Ver ejemplo</span>
-                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300">
+                        <div class="grid lg:grid-cols-[360px_1fr]">
+                            <a href="https://portfolio-pro.com/ejemplos/martina-suarez" target="_blank" class="relative min-h-[300px] bg-slate-100 overflow-hidden block">
+                                <img src="https://static.photos/office/640x480/30" alt="Portfolio de Martina Suárez" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"></div>
+                                <div class="absolute top-5 right-5 inline-flex items-center gap-2 bg-white text-slate-900 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                                    <span>Ver ejemplo</span>
+                                </div>
+                                <div class="absolute left-6 bottom-6 right-6">
+                                    <span class="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold border border-white/20">Perfil profesional</span>
+                                    <h3 class="mt-4 text-2xl font-bold text-white">Martina Suárez</h3>
+                                    <p class="text-sm text-amber-100">Administrativa con foco en organización y atención al cliente</p>
+                                </div>
+                            </a>
+                            <div class="p-8 lg:p-10">
+                                <div class="flex flex-wrap items-center gap-3 mb-5">
+                                    <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold">CV interactivo</span>
+                                    <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-semibold">Experiencia y habilidades</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-6">Una opción más personal y ordenada para búsqueda laboral o perfil profesional.</p>
+                                <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Fortalezas</p>
+                                        <p class="font-semibold text-slate-900">Gestión, coordinación y trato con clientes</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Contenido</p>
+                                        <p class="font-semibold text-slate-900">Logros, software y referencias</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Meta</p>
+                                        <p class="font-semibold text-slate-900">Conseguir entrevistas más rápido</p>
+                                    </div>
+                                </div>
+                                <a href="https://portfolio-pro.com/ejemplos/martina-suarez" target="_blank" class="inline-flex items-center gap-2 text-blue-600 text-sm font-semibold hover:text-blue-700">
+                                    <span>Ir al ejemplo completo</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Example 4 -->
+                <div class="group scroll-reveal">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300">
+                        <div class="grid lg:grid-cols-[360px_1fr]">
+                            <a href="https://portfolio-pro.com/ejemplos/sofia-medina" target="_blank" class="relative min-h-[300px] bg-slate-100 overflow-hidden block">
+                                <img src="https://static.photos/women/640x480/14" alt="Portfolio de Sofía Medina" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"></div>
+                                <div class="absolute top-5 right-5 inline-flex items-center gap-2 bg-white text-slate-900 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                                    <span>Ver ejemplo</span>
+                                </div>
+                                <div class="absolute left-6 bottom-6 right-6">
+                                    <span class="inline-flex items-center gap-2 bg-fuchsia-500/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold border border-white/20">Belleza & estética</span>
+                                    <h3 class="mt-4 text-2xl font-bold text-white">Sofía Medina</h3>
+                                    <p class="text-sm text-fuchsia-100">Lashista y especialista en cejas</p>
+                                </div>
+                            </a>
+                            <div class="p-8 lg:p-10">
+                                <div class="flex flex-wrap items-center gap-3 mb-5">
+                                    <span class="px-3 py-1 bg-fuchsia-100 text-fuchsia-700 rounded-full text-xs font-bold">Turnos por WhatsApp</span>
+                                    <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-semibold">Antes y después</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-6">Un estilo más aspiracional y visual para convertir visitas en reservas.</p>
+                                <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Servicios</p>
+                                        <p class="font-semibold text-slate-900">Lifting y pestañas</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Clave</p>
+                                        <p class="font-semibold text-slate-900">Galería visual</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Meta</p>
+                                        <p class="font-semibold text-slate-900">Más reservas</p>
+                                    </div>
+                                </div>
+                                <a href="https://portfolio-pro.com/ejemplos/sofia-medina" target="_blank" class="inline-flex items-center gap-2 text-blue-600 text-sm font-semibold hover:text-blue-700">
+                                    <span>Ir al ejemplo completo</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 5 -->
+                <div class="group scroll-reveal delay-100">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300">
+                        <div class="grid lg:grid-cols-[360px_1fr]">
+                            <a href="https://portfolio-pro.com/ejemplos/gaston-ferreyra" target="_blank" class="relative min-h-[300px] bg-slate-100 overflow-hidden block">
+                                <img src="https://static.photos/food/640x480/22" alt="Portfolio de Gastón Ferreyra" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"></div>
+                                <div class="absolute top-5 right-5 inline-flex items-center gap-2 bg-white text-slate-900 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                                    <span>Ver ejemplo</span>
+                                </div>
+                                <div class="absolute left-6 bottom-6 right-6">
+                                    <span class="inline-flex items-center gap-2 bg-orange-500/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold border border-white/20">Gastronomía</span>
+                                    <h3 class="mt-4 text-2xl font-bold text-white">Gastón Ferreyra</h3>
+                                    <p class="text-sm text-orange-100">Chef para eventos y experiencias privadas</p>
+                                </div>
+                            </a>
+                            <div class="p-8 lg:p-10">
+                                <div class="flex flex-wrap items-center gap-3 mb-5">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold">Menús y eventos</span>
+                                    <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-semibold">Fotos de platos</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-6">Más sensorial y visual, ideal para vender experiencia y reservas.</p>
+                                <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Formato</p>
+                                        <p class="font-semibold text-slate-900">Eventos privados</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Diferencial</p>
+                                        <p class="font-semibold text-slate-900">Presentación premium</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Meta</p>
+                                        <p class="font-semibold text-slate-900">Más consultas</p>
+                                    </div>
+                                </div>
+                                <a href="https://portfolio-pro.com/ejemplos/gaston-ferreyra" target="_blank" class="inline-flex items-center gap-2 text-blue-600 text-sm font-semibold hover:text-blue-700">
+                                    <span>Ir al ejemplo completo</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 6 -->
+                <div class="group scroll-reveal delay-200">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 hover:shadow-2xl transition-all duration-300">
+                        <div class="grid lg:grid-cols-[360px_1fr]">
+                            <a href="https://portfolio-pro.com/ejemplos/nicolas-arias" target="_blank" class="relative min-h-[300px] bg-slate-100 overflow-hidden block">
+                                <img src="https://static.photos/construction/640x480/18" alt="Portfolio de Nicolás Arias" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"></div>
+                                <div class="absolute top-5 right-5 inline-flex items-center gap-2 bg-white text-slate-900 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                                    <span>Ver ejemplo</span>
+                                </div>
+                                <div class="absolute left-6 bottom-6 right-6">
+                                    <span class="inline-flex items-center gap-2 bg-emerald-500/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold border border-white/20">Construcción</span>
+                                    <h3 class="mt-4 text-2xl font-bold text-white">Nicolás Arias</h3>
+                                    <p class="text-sm text-emerald-100">Maestro mayor de obras y refacciones</p>
+                                </div>
+                            </a>
+                            <div class="p-8 lg:p-10">
+                                <div class="flex flex-wrap items-center gap-3 mb-5">
+                                    <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold">Obras reales</span>
+                                    <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-semibold">Etapas y resultados</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-6">Ideal para mostrar avance de obra, prolijidad y escala del servicio.</p>
+                                <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Trabajos</p>
+                                        <p class="font-semibold text-slate-900">Refacciones y obra nueva</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Valor</p>
+                                        <p class="font-semibold text-slate-900">Más confianza</p>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                        <p class="text-xs uppercase tracking-[0.18em] text-slate-400 mb-2">Meta</p>
+                                        <p class="font-semibold text-slate-900">Proyectos más grandes</p>
+                                    </div>
+                                </div>
+                                <a href="https://portfolio-pro.com/ejemplos/nicolas-arias" target="_blank" class="inline-flex items-center gap-2 text-blue-600 text-sm font-semibold hover:text-blue-700">
+                                    <span>Ir al ejemplo completo</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-reveal mb-16">
+                <div class="rounded-3xl border border-slate-200 bg-gradient-to-r from-slate-50 via-white to-blue-50 px-8 py-7 text-center shadow-sm">
+                    <p class="text-slate-900 text-lg font-semibold mb-2">Estos son solo algunos casos.</p>
+                    <p class="text-slate-600 max-w-3xl mx-auto">Tenemos muchos más ejemplos para distintos perfiles, estilos y rubros. Cada portfolio se adapta al cliente, a su objetivo y al tipo de trabajo que quiere conseguir.</p>
                 </div>
             </div>
             
